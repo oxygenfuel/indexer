@@ -1,0 +1,19 @@
+[package]
+name = "indexer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+axum = { version = "0.5.17", features = ["headers"] }
+tokio = { version = "1.0", features = ["full"] }
+tracing = "0.1.35"
+tracing-subscriber = "0.3.14"
+serde = { version = "1.0.90", features = ["derive"] }
+serde_json = "1.0"
+tower-http = { version = "0.3.4", features = ["cors"] }
+fuels = { version = "0.41", features = ["fuel-core-lib"] }
+dotenv = "0.15.0"
+reqwest = "0.11.16"
